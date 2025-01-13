@@ -1,0 +1,667 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+header .logo{
+    color: #fd7e14;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+header nav ul{
+    font-family: epilogue;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    transition:0.7s;
+
+}
+header nav ul li a{
+    margin: 15px;
+    position: relative;
+    font-size: 13px;
+    color: black;
+}
+header nav ul li a:hover{
+    width: 100%;
+    color: #fd7e14;
+    transition: .5s;
+}
+header .hamburger svg{
+    display: none;
+}
+#myLinks{
+    display: none;
+    z-index: 1;
+}
+main .background-image{
+    /* image reference: pexels-mikhail-nilov-6834393.jpg */
+    background-image:url(./images/pexels-mikhail-nilov-6834393.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 89vh;
+}
+main .black-box{
+    height: 89vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+}
+main .background-image .text{
+    color: white;
+    display: flex;
+    height: 89vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .background-image .text h1{
+    font-size: 6rem;
+    opacity: .8;
+}
+
+main .background-image .text button{
+    color: rgba(0, 0, 0, 0.933);
+    padding: 16px 79px ;
+    margin-top: 25px;
+    background-color: #fefe;
+    border: none;
+    font-weight: 700;
+    font-size: .8rem;
+    border-radius: 20px;
+    transition: .7s;
+    opacity: 1;
+}
+main .background-image .text button:hover{
+    background-color: #fd7e14;
+    border: #fefe;
+    cursor: pointer;
+    color: #fefe;
+}
+
+.product-section{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin:auto;
+    transition: .6s;
+}
+.product-section .title{
+    text-align: center;
+    min-height: 200px;
+    padding: 40px;
+    line-height: 30px;
+
+}
+.product-section .title p{
+    text-transform: uppercase;
+    color: #fd7e14;
+    letter-spacing: 2px;
+}
+.product-section .title h3{
+    font-size: 2rem;
+    opacity: .6;
+}
+
+.product-section .products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, auto));
+    gap: 1.5rem;
+    transition: 1s;
+}
+.product-section .row{
+    position: relative;
+    
+}
+.product-section img{
+    width: 100%;
+    height: auto;
+}
+/* .product-section .row img:hover{
+    transform: scale(0.95);
+} */
+.product-section .products #one, #two, #three{
+    display: none;
+    position: absolute;
+    top: 13px;
+    left: 14px;
+    color: #fff;
+    width: 90%;
+    height: 78%;
+    font-size: 20rem;
+    font-weight: 700;
+    opacity: .7;
+    background-color: #000000;
+    /* padding: 5px 10px; */
+    border-radius: 2px;
+    justify-content: center;
+    text-align: center;
+    transition: .6s;
+
+    
+}
+.product-section .product-text-one:hover h1#one{
+    display: block;
+    cursor: pointer;
+
+}
+.product-section .product-text-two:hover h1#two{
+    display: block;
+    cursor: pointer;
+
+}
+.product-section .product-text-three:hover h1#three{
+    display: block;
+    cursor: pointer;
+
+}
+.product-section button{
+    width: 100%;
+    position: relative;
+    top: -4px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.933);
+    background-color:#000000;
+    cursor: pointer;
+    transition: 1.4s;
+}
+.product-section button:hover{
+    background-color: #fd7e14;
+}
+
+.product-section .rating #one{
+    color: #fd7e14;
+}
+.new-arrivals{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin:auto;
+}
+.new-arrivals .title{
+    text-align: center;
+    min-height: 200px;
+    padding: 40px;
+    line-height: 30px;
+
+}
+.new-arrivals .title p{
+    text-transform: uppercase;
+    color: #fd7e14;
+    letter-spacing: 2px;
+}
+.new-arrivals .all-row .product-text p{
+    text-transform: uppercase;
+    text-align:left;
+}
+.new-arrivals .title h3{
+    font-size: 2rem;
+    opacity: .6;
+}
+.new-arrivals .all-row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, auto));
+    gap: 1rem;
+}
+.new-arrivals .row img{
+    height: auto;
+    width: 100%;
+    border-radius: 5px;
+    transition: .2s;
+}
+.new-arrivals .row img:hover{
+    border-top:3px solid #fd7e14;
+    cursor: pointer;
+}
+.new-arrivals .row .rating svg#one{
+    color: #fd7e14;
+
+}
+
+section .news-letter-background{
+    margin-top:40px;
+    height: 70vh;
+    width:100%;
+    background-image:linear-gradient(to top, transparent 0%, black 70%), url(./images/products/pexels-tima-miroshnichenko-7205901.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.another-background .instagram-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.another-background .instagram-images img{
+    height: 150px;
+    width: 150px;
+    margin: 0 10px;
+}
+.another-background .text{
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    padding: 40px 0;
+}
+.another-background .button{
+    text-align: center;
+    margin: 20px 0;
+}
+.another-background .button button{
+    padding:13px 30px;
+    outline: none;
+    border:0;
+    transition: .5s all ease;
+}
+.another-background .button button:hover{
+    color: #fff;
+    transform: scale(1.1);
+    border: 2px solid #fff;
+    background-color: transparent;
+}
+.news-letter form{
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+.news-letter form input{
+    width: 50%;
+    padding: 15px 50px;
+    border: 0;
+    outline: none;
+}
+.news-letter form button{
+    padding: 15px 30px;
+    position: relative;
+    left: -5px;
+    color: #fff;
+    background-color:#fd7e14;
+    border: none;
+    cursor: pointer;
+}
+footer{
+    /* background: linear-gradient(to bottom right, #fd8451, #ffbd6f); */
+    color: #ffff;
+    font-family: epilogue;
+}
+footer .footer {
+   padding-top: 30px;
+    
+}
+footer .text{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+footer .text ul li{
+    padding: 7px;
+}
+footer .text ul li a{
+    font-size: 12px;
+    color: black;
+    transition: .6s;
+}
+footer .text ul li a:hover{
+    color: #fd7e14;
+}
+footer .icons{
+    margin-top: 20px;
+    text-align: center;
+}
+footer .icons span svg{
+    height: 20px;
+    width: 20px;
+    color: #000000;
+    margin: 10px;
+    transition: .7s ease;
+}
+footer .icons span svg:hover{
+    transform: scale(1.1);
+    color: #fcfcfc;
+    background-color: #fd7e14;
+    border-radius: 2px;
+}
+footer .h-one{
+    display: none;
+    margin: 12px 0;
+    letter-spacing: 5px;
+    text-align: center;
+    color: black;
+}
+footer h3{
+    color: #000000;
+    text-align: center;
+}  
+footer p{
+    color: black;
+    padding: 30px 0;
+    font-size: small;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+/* LOGIN & REGISTER SECTION */
+.main-login-section .login-background{
+    font-family: '';
+    background-color: rgb(255, 250, 250);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, auto));
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.main-login-section .main-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+    
+}
+.main-login-section .login-background .imagery img{
+    height: 100vh;
+    width: 100%;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.main-login-section .text h1{
+    font-family: '';
+    position: absolute;
+    top: 10%;
+    left: 20%;
+}
+.main-login-section .text h2, p{
+    text-align: center;
+    line-height: 37px;
+    padding: 0;
+}
+.main-login-section .login-with-google{
+    border: 1px solid grey;
+    text-align: center;
+    border-radius: 7px;
+    margin: 15px 0 15px 0;
+    cursor: pointer;
+    transition:.6s ease;
+}
+.main-login-section .login-with-google span a{
+    color: tomato;
+}
+.main-login-section .login-with-google:hover{
+    border-color: #000000;
+}
+.main-login-section .login-with-google span a:hover{
+    color: black;
+}
+.main-login-section form{
+    width: 350px;
+}
+.main-login-section form input[type="text"]{
+    margin: 6px 0;
+    border: 0;
+    background-color:transparent;
+    border-bottom: 1px solid whitesmoke;
+    outline: none;
+    width:100%;
+    padding: 10px;
+    
+}
+.main-login-section form input[type="name"]{
+    margin: 6px 0;
+    border: 0;
+    background-color:transparent;
+    border-bottom: 1px solid whitesmoke;
+    outline: none;
+    width:100%;
+    padding: 10px;
+    
+}
+.main-login-section form input[type="email"]{
+    margin: 6px 0;
+    border: 0;
+    background-color:transparent;
+    border-bottom: 1px solid whitesmoke;
+    outline: none;
+    width:100%;
+    padding: 10px;
+    
+}
+.main-login-section form input[type="password"]{
+    margin: 6px 0;
+    border: 0;
+    background-color:transparent;
+    border-bottom: 1px solid whitesmoke;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+}
+.main-login-section form input.checkbox{
+    font-size: small;
+}
+.main-login-section #forgot-password{
+    text-align: end;
+    margin-left:120px ;
+}
+
+.main-login-section form button{
+    width: 100%;
+    padding: 13px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+/* CONTACT SECTION */
+.main-section-contact main{
+    background-image:url(./images/pexels-godisable-jacob-896291.jpg);
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+}
+.main-section-contact .contact{
+    background-color: black;
+    opacity: .89;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+.main-section-contact .contact form{
+    width: 500px;
+}
+.main-section-contact .contact h1{
+    color: #fff;
+}
+.main-section-contact .contact form input[type='email']{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 0;
+    outline-color: #fd7e14;
+    font-family: epilogue;
+}
+.main-section-contact .contact form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    resize: none;
+    border: 0;
+    outline-color: #fd7e14;
+    font-family: epilogue;
+}
+.main-section-contact .contact button{
+    width: 100%;
+    padding: 13px;
+    background-color: #fd7e14;
+    border: 0;
+    color: #fff;
+    font-family: epilogue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:990px){
+    .nav-list{
+        display: none;
+    }
+    header ul{
+    transition: .5s;
+    }
+    header .hamburger svg{
+        display: block;
+        color: #fd7e14;
+    }
+    /* #myLinks{
+        display: none;
+        z-index: 1;
+    } */
+    #myLinks a{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        font-family: sans-serif;
+        background: black;
+        color: white;
+        width: auto;
+        align-items: flex-end;
+        border-bottom: 1px solid grey;
+        padding: 20px;
+        transition: .5s;
+
+    }
+    main .background-image .text h1{
+        font-size: 4rem;
+        opacity: .8;
+        text-align: center;
+    }
+    .product-section h5{
+        position: absolute;
+        top: 13px;
+        left: 13px;
+        color: #fff;
+        font-weight: 500;
+        opacity: .7;
+        background-color: #000000;
+        padding: 5px 10px;
+        border-radius: 2px;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    .product-section, .numbers-section{
+        padding-left: .3rem;
+        padding-right: .3rem;
+        margin:auto;
+        transition-delay: 2s;
+    }
+    .another-background .instagram-images{
+        overflow: auto;
+        white-space: nowrap;
+    }
+    .another-background .instagram-images img{
+        display: inline-block;
+    }
+    section .news-letter-background{
+        height: 70vh;
+    }
+    footer .text{
+        display: none;
+    }
+    footer .h-one{
+        display: block;
+        color: #ffff
+    }
+    #known{
+        display: none;
+    }
+    main .login-with-google{
+        cursor: pointer;
+        transition:.6s ease;
+    }
+    .main-login-section .text h1{
+        position: absolute;
+        top: 10%;
+        left: 25%;
+        font-size: 40px;
+    }
+    .main-login-section form{
+        width: 350px;
+    }
+    
+    .main-login-section .login-background{
+        background-color: rgb(255, 250, 250);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+        position: relative;
+    }
+    .main-section-contact .contact form{
+        width: 330px;
+    }
+}

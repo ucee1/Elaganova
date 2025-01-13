@@ -1,0 +1,20 @@
+The database name for this projects login and register is reglog
+And the table is tb_user
+The fields are;
+-id
+-name
+-username
+-email
+-password
+
+
+
+
+
+
+
+
+
+
+
+
